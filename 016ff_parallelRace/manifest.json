@@ -1,0 +1,8 @@
+{
+  "title": "016ff_parallelRace",
+  "description": "FunctionFlow parallelRace() method executes all functions simultaneously. Returned result is first resolved promise.",
+  "thumbnail": "",
+  "category": "dex8example",
+  "howto": "",
+  "files": []
+}
