@@ -1,6 +1,6 @@
-const f1 = require('./f1.js');
-const f2 = require('./f2.js');
-const f3 = require('./f3.js');
+const f1 = require('./f1');
+const f2 = require('./f2');
+const f3 = require('./f3');
 
 
 module.exports = async (input, lib) => {
@@ -12,8 +12,8 @@ module.exports = async (input, lib) => {
 
   echo.log('input::', input);
 
-  const y = await ff.serial([f1, f2, f3, f1]);
-  await ff.delay(3400);
+  await ff.serial([f1, f2, f3]);
+  const y = await ff.repeat(10);
 
   echo.log('output::', y);
   return y; // or return ff.x;

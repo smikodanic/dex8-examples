@@ -6,15 +6,16 @@ const f3 = require('./f3.js');
 module.exports = async (input, lib) => {
   const echo = lib.echo;
   const ff = lib.ff;
-  ff.setOpts({debug: false, msDelay: 1200});
+  ff.setOpts({debug: false, msDelay: 700});
   ff.xInject(input);
   ff.libInject(lib);
 
-  echo.log('input::', input);
+  echo.log('input::', input.a);
 
-  const y = await ff.serial([f1, f2, f3, f1]);
-  await ff.delay(3400);
+  await ff.serial([f1, f2, f3]);
+  const y = await ff.repeat(3); // repeats ff.serial 3 times
 
-  echo.log('output::', y);
+  echo.log('output::', y.a);
+
   return y; // or return ff.x;
 };

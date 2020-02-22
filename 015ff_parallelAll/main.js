@@ -4,10 +4,9 @@ const f3 = require('./f3.js');
 
 
 module.exports = async (input, lib) => {
+  const echo = lib.echo;
   const ff = lib.ff;
   ff.setOpts({debug: false, msDelay: 2100});
-  const echo = lib.echo;
-
   ff.xInject(input);
   ff.libInject(lib);
 

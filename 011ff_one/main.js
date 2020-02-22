@@ -5,16 +5,11 @@ const f2 = require('./f2.js');
 module.exports = async (input, lib) => {
   const ff = lib.ff;
   ff.setOpts({debug: false, msDelay: 2100});
+  ff.xInject(input);
+  ff.libInject(lib);
 
-  try {
-    ff.xInject(input);
-    ff.libInject(lib);
+  await ff.one(f1);
+  const y = await ff.one(f2);
 
-    await ff.one(f1);
-    const y = await ff.one(f2);
-    return y; // or return ff.x;
-
-  } catch(err) {
-    throw err;
-  }
+  return y; // or return ff.x;
 };

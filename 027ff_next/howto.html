@@ -1,0 +1,30 @@
+<h1>027ff_next</h1>
+<p>
+  FunctionFlow <b>next()</b> method.
+  <br>Stop execution of all funcs functions in serial(funcs) method and continue with next serial or parallel method.
+</p>
+
+<p>
+  In this example there are 3 serail methods which executes f1, f2 and f3 serially.
+  <br>Function f2 has next() so f3 is never executed.
+</p>
+
+<br>
+<br>
+<br>
+<h3>Echoes:</h3>
+<pre>(22.Feb.2020 11:40:10.163) Task "027ff_next" started on 22.2.2020 11:40:10
+(22.Feb.2020 11:40:10.171) input:: 5
+(22.Feb.2020 11:40:10.172) f1:: 6
+(22.Feb.2020 11:40:11.375) f2:: 7
+(22.Feb.2020 11:40:12.577) f1:: 8
+(22.Feb.2020 11:40:13.778) f2:: 9
+(22.Feb.2020 11:40:14.981) f1:: 10
+(22.Feb.2020 11:40:16.182) f2:: 11
+(22.Feb.2020 11:40:17.385) output:: 11
+(22.Feb.2020 11:40:17.386) Task "027ff_next" is ended on 22.2.2020 11:40:17</pre>
+
+
+<br><br>
+<h2>DEX8-SDK CLI</h2>
+<i>$ dex8 start -i input.js -s</i>
