@@ -1,6 +1,7 @@
 module.exports = async (input, lib) => {
   const ff = lib.ff;
   const echo = lib.echo;
+  echo.short = true;
 
   echo.log('rnd = ', Math.random().toFixed(6), ' --- ok');
   await ff.delay(2100);
