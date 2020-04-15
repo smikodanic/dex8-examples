@@ -1,0 +1,46 @@
+<h1>SinglePageBOT</h1>
+<p>SinglePageBOT extracts data from a single web page.</p>
+
+<h3>Features:</h3>
+<ul>
+  <li>Extract data from dynamic HTML content which is loaded by Javascript</li>
+  <li>Extract data from HTML element defined by CSS selector</li>
+  <li>Extract text, html or value from HTML tag attribute</li>
+  <li>Filter extracted data by Regular Expression </li>
+  <li>Correct extracted data by custom JS function</li>
+</ul>
+
+
+<br><br>
+<h3>Input fields</h3>
+Example of an input file.
+<br>
+<pre><code>module.exports = {
+  url: 'google.com/search?q=site%3A.hr',
+  encodeURL: false,  // encode URL before web page is opened
+
+  // define HTML element and data to be extracted
+  extract: {
+    tip: 'attr', // text, html, attr
+    selector: 'a', // CSS selector
+    attribute: 'href' // use only when tip is 'attr'
+  },
+
+  // filter extracted data by regular expression
+  filter: {
+    reg_str: '\\.hr\\/?$', // regex string
+    reg_flags: 'i' // regex flags
+  },
+
+  // correct extracted data by custom function
+  corrector: (result) => {
+    result.trim();
+    result = result.replace('\n', '');
+    result = result.replace(/\/$/, '');
+    return result;
+  },
+
+  results: [], // extracted data
+  results_count: 0
+};
+</code></pre>
