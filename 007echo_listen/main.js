@@ -12,8 +12,6 @@ module.exports = async (input, lib) => {
   // listen from the Web Panel or Console input
   echo.input('Enter captcha:');
 
-  echo.socket.on('room_echoInputs', msg => console.log('TASk msg:::', msg));
-
   const msg = await echo.listen();
 
   if (msg === 'V4XBG') {
