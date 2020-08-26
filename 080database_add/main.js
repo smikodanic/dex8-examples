@@ -16,6 +16,6 @@ module.exports = async (input, lib) => {
   const y = await ff.serial([dbconnect, dbinsert, dblist, dbdisconnect]);
   await ff.delay(3400);
 
-  echo.log('output::', y);
+  echo.log('y::', y);
   return y; // or return ff.x;
 };
