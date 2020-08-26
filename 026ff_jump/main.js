@@ -6,7 +6,7 @@ const f3 = require('./f3');
 module.exports = async (input, lib) => {
   const echo = lib.echo;
   const ff = lib.ff;
-  ff.setOpts({debug: false, msDelay: 1200});
+  ff.setOpts({debug: true, msDelay: 1200});
   ff.xInject(input);
   ff.libInject(lib);
 

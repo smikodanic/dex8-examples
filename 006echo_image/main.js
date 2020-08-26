@@ -1,14 +1,15 @@
 module.exports = async (input, lib) => {
+  if (!input) { throw new Error('Input is required.'); }
+
   const ff = lib.ff;
   const echo = lib.echo;
   // echo.short = true;
 
-  if (!input) {throw new Error('Select input file.');}
+  await ff.delayRnd(2100, 3400);
 
   // echo image
   const img_b64 = input.img_b64;
   echo.image(img_b64);
-
 
   return;
 };

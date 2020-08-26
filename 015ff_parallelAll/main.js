@@ -10,7 +10,7 @@ module.exports = async (input, lib) => {
   ff.xInject(input);
   ff.libInject(lib);
 
-  // parallelAll will send output after 3 seconds because fja2 will need the longest time interval to be fulfilled (3 seconds)
+  // parallelAll will send output after 3 seconds because f2 will need the longest time interval to be fulfilled (3 seconds)
   const y = await ff.parallelAll([f1, f2, f3]);
   echo.objekt(y);
 

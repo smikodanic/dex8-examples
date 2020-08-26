@@ -15,7 +15,7 @@ module.exports = async (input, lib) => {
   await ff.serial([f1, f2, f3]);
   const y = await ff.repeat(3); // repeats ff.serial 3 times
 
-  echo.log('output::', y.a);
+  echo.log('y.a::', y.a);
 
   return y; // or return ff.x;
 };

@@ -1,4 +1,6 @@
 module.exports = async (input, lib) => {
+  if (!input) { throw new Error('Input is required.'); }
+
   const ff = lib.ff;
   const echo = lib.echo;
 

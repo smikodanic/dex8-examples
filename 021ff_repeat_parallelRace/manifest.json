@@ -1,6 +1,6 @@
 {
   "title": "021ff_repeat_parallelRace",
-  "description": "FunctionFlow repeat() method. Repeat parallelRace() n times.",
+  "description": "FunctionFlow repeat() method repeats parallelRace() n times.",
   "thumbnail": "",
   "category": "dex8example",
   "howto": "",

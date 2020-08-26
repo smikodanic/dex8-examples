@@ -10,7 +10,7 @@ module.exports = async (input, lib) => {
   ff.xInject(input);
   ff.libInject(lib);
 
-  // parallelAll will send output after 3 seconds because fja2 will need the longest time interval to be fulfilled (3 seconds)
+  // parallelRace will send output after 3 seconds because fja2 will need the longest time interval to be fulfilled (3 seconds)
   const y = await ff.parallelRace([f1, f2, f3]);
   echo.log(' +++ Result from function f3 will be returned as fastest function.');
   echo.log('output result is:', y);

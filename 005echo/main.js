@@ -1,4 +1,6 @@
 module.exports = async (input, lib) => {
+  if (!input) { throw new Error('Input is required.'); }
+
   const ff = lib.ff;
   const echo = lib.echo;
   // echo.short = true;
@@ -14,12 +16,6 @@ module.exports = async (input, lib) => {
 
   // echo internal error
   echo.error(new Error('Intentional error !')); // this error will not break robot because we didn't throw it
-  await ff.delay(2100);
-
-  // send on success (send message and object at the same time)
-  const msg = 'My message.';
-  const obj = {success: true, msg: 'Object is sent', data: [{a: 1}, {a: 2}]};
-  echo.send({msg, obj});
   await ff.delay(2100);
 
 
