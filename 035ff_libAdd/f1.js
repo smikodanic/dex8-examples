@@ -1,5 +1,5 @@
-module.exports = (x, lib) => {
+module.exports = async (x, lib) => {
   const libs = lib.ff.libList();
-  lib.echo.objekt(libs);
+  await lib.echo.objekt(libs);
   return x;
 };

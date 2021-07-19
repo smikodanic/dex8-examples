@@ -15,11 +15,11 @@ module.exports = async (input, lib) => {
   ff.xInject(input);
   ff.libInject(lib);
 
-  echo.log('input::', input);
+  await echo.log('input::', input);
 
   const y = await ff.serial([f0, f1, f2, f3, f4, f5, f6]);
 
-  echo.log('output::', y);
+  await echo.log('output::', y);
   return y; // or return ff.x;
 };
 

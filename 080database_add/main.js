@@ -11,11 +11,11 @@ module.exports = async (input, lib) => {
   ff.xInject(input);
   ff.libInject(lib);
 
-  echo.log('input::', input);
+  await echo.log('input::', input);
 
   const y = await ff.serial([dbconnect, dbinsert, dblist, dbdisconnect]);
   await ff.delay(3400);
 
-  echo.log('y::', y);
+  await echo.log('y::', y);
   return y; // or return ff.x;
 };

@@ -8,17 +8,17 @@ module.exports = async (input, lib) => {
 
   // echo image
   const img_b64 = input.captcha_img;
-  echo.image(img_b64);
+  await echo.image(img_b64);
 
   // listen from the Web Panel or Console input
-  echo.input('Enter captcha:');
+  await echo.input('Enter captcha:');
 
   const msg = await echo.listen();
 
   if (msg === 'V4XBG') {
-    echo.log(`Recived input: ${msg} . Captcha is solved !`);
+    await echo.log(`Recived input: ${msg} . Captcha is solved !`);
   } else {
-    echo.log(`Recived input: ${msg} . Captcha is not solved !`);
+    await echo.log(`Recived input: ${msg} . Captcha is not solved !`);
   }
 
 

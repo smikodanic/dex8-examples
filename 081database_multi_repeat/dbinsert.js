@@ -11,8 +11,8 @@ module.exports = async (x, lib) => {
 
   x.addedDoc = await mongo.add(doc);
 
-  echo.log('Doc is added.');
-  echo.objekt(x.addedDoc);
+  await echo.log('Doc is added.');
+  await echo.objekt(x.addedDoc);
 
   return x;
 };

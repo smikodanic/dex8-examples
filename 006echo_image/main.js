@@ -9,7 +9,7 @@ module.exports = async (input, lib) => {
 
   // echo image
   const img_b64 = input.img_b64;
-  echo.image(img_b64);
+  await echo.image(img_b64);
 
   return;
 };

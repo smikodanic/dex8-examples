@@ -9,7 +9,7 @@ module.exports = async (x, lib) => {
 
   x.listedDocs = await mongo.list(moQuery, 100, 0, '-created_at', '');
 
-  echo.objekt(x.listedDocs);
+  await echo.objekt(x.listedDocs);
 
   return x;
 };

@@ -10,11 +10,11 @@ module.exports = async (input, lib) => {
   ff.xInject(input);
   ff.libInject(lib);
 
-  echo.log('input::', input);
+  await echo.log('input::', input);
 
   await ff.serial([f1, f2, f3]);
   const y = await ff.repeat(10);
 
-  echo.log('output::', y);
+  await echo.log('output::', y);
   return y; // or return ff.x;
 };

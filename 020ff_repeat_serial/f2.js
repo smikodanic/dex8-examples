@@ -1,8 +1,8 @@
-const fja2 = function (x, lib) {
+const fja2 = async function (x, lib) {
   const echo = lib.echo;
 
   x.a++;
-  echo.log('f2:: ', x.a);
+  await echo.log('f2:: ', x.a);
   return x;
 };
 

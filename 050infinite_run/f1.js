@@ -1,5 +1,7 @@
-module.exports = (x, lib) => {
+module.exports = async (x, lib) => {
+  const input = lib.input;
+
+  await lib.echo.log('f1::', x, input.name);
   x++;
-  lib.echo.log('f1::', x);
   return x;
 };

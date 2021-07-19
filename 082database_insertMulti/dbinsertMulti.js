@@ -23,8 +23,8 @@ module.exports = async (x, lib) => {
 
   x.addedDoc = await mongo.insertMulti(docs);
 
-  echo.log('Docs are added.');
-  echo.objekt(x.addedDoc);
+  await echo.log('Docs are added.');
+  await echo.objekt(x.addedDoc);
 
   return x;
 };
