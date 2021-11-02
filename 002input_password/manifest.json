@@ -3,6 +3,13 @@
   "description": "Example with different variations of password field.",
   "thumbnail": "",
   "category": "dex8example",
-  "files": [],
+  "files": [
+    {
+      "name": "input.json"
+    },
+    {
+      "name": "main.js"
+    }
+  ],
   "howto": ""
 }
