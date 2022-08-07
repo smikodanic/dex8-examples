@@ -3,17 +3,21 @@ module.exports = async (input, lib) => {
 
   const ff = lib.ff;
   const echo = lib.echo;
+  console.log(echo);
 
   // echo pure string
   await echo.log('rnd = ', Math.random().toFixed(6), ' --- ok');
-  await echo.log('A');
-  await echo.log('B');
+  await echo.log('A', 'B');
+  await echo.log('C');
 
   // echo JS object
   await echo.objekt({ a: 1, b: 'some string', is_active: false });
 
   // echo internal error
-  await echo.error(new Error('Intentional error !')); // this error will not break robot because we didn't throw it
+  await echo.error(new Error('This is the intentional error !')); // this error will not break robot because we didn't throw it
+
+  // echo warning
+  await echo.warn('This is the warning message.');
 
   await ff.delay(2100);
 

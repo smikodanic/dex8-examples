@@ -1,6 +1,7 @@
 <h1>005echo</h1>
 <p>
-  The example shows how to use Echo helper methods log(), objekt() and error().
+  The example shows how to use Echo helper methods log(), objekt(), error(), warn(), ....
+  <br>Also it tests the behaviour of echo.log() applied directly in the for loop. Especially if it will work well via web panle i.e. via regoch-websocket.
 </p>
 
 
@@ -9,6 +10,7 @@
   <li><b>await echo.log('one', 2, 'three')</b> - print string message(s)</li>
   <li><b>await echo.objekt({x: 13, y: 'power'})</b> - print object</li>
   <li><b>await echo.error(new Error('My error!'))</b> - print error</li>
+  <li><b>await echo.warn('Some warning')</b> - print warning</li>
   <li><b>await echo.image(img_b64)</b> - send image in base64 format</li>
   <li><b>await echo.listen()</b> - listen for an input from the Web Panel</li>
 </ul>
