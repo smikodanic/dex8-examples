@@ -1,0 +1,7 @@
+{
+  "title": "021functionFlow_repeat_parallelRace",
+  "description": "The example shows how to use FunctionFlowX repeat() method in combination with parallelRace() method.",
+  "category": "examples",
+  "thumbnail": "",
+  "response_output": false
+}

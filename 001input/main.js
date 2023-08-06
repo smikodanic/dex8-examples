@@ -1,14 +1,17 @@
-module.exports = async (input, lib) => {
+const Echoer = require('echoer');
+const { EventEmitter } = require('events');
+
+
+module.exports = async (input) => {
   if (!input) { throw new Error('Input is required.'); }
 
-  const ff = lib.ff;
-  ff.setOpts({debug: false, msDelay: 2100});
+  // create event emitter
+  const eventEmitter = new EventEmitter();
+  eventEmitter.setMaxListeners(5); // 10 by default
 
-  const echo = lib.echo;
+  const echoer = new Echoer(true, 10, eventEmitter);
 
-  await ff.delay(1300);
-  await echo.log('   a = ', input.a);
-  await ff.delay(3400);
+  echoer.log('   a = ', input.a);
 
   return input;
 };

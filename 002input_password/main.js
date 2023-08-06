@@ -1,23 +1,25 @@
-module.exports = async (input, lib) => {
+const Echoer = require('echoer');
+const { EventEmitter } = require('events');
+
+
+module.exports = async (input) => {
   if (!input) { throw new Error('Input is required.'); }
 
-  const ff = lib.ff;
-  const echo = lib.echo;
+  // create event emitter
+  const eventEmitter = new EventEmitter();
+  eventEmitter.setMaxListeners(5); // 10 by default
 
-  await echo.log('   a = ', input.a);
+  const echoer = new Echoer(true, 10, eventEmitter);
 
-  await ff.delay(1300);
-  
-  await echo.log('LEVEL 1 --- password: ', input.password);
-  await echo.log('LEVEL 1 ---  password_1: ', input.password_1);
-  await echo.log('LEVEL 1 ---  MyPAssword_1: ',  input.MyPAssword_1, input.PasswordNotExists);
-  await echo.log('PasswordNotExists: ',  input.PasswordNotExists);
-  await echo.log();
-  await echo.log('LEVEL 2 --- company.comp_password:', input.company.comp_password);
-  await echo.log();
-  await echo.log('LEVEL 3 --- company.employer1.emp1_password:', input.company.employer1.emp1_password);
-  
-  await ff.delay(3400);
+  echoer.log('   a = ', input.a);
+  echoer.log('LEVEL 1 --- password: ', input.password);
+  echoer.log('LEVEL 1 ---  password_1: ', input.password_1);
+  echoer.log('LEVEL 1 ---  MyPAssword_1: ', input.MyPAssword_1, input.PasswordNotExists);
+  echoer.log('PasswordNotExists: ', input.PasswordNotExists);
+  echoer.log();
+  echoer.log('LEVEL 2 --- company.comp_password:', input.company.comp_password);
+  echoer.log();
+  echoer.log('LEVEL 3 --- company.employer1.emp1_password:', input.company.employer1.emp1_password);
 
   return input;
 };

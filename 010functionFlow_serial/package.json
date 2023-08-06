@@ -1,0 +1,13 @@
+{
+  "name": "dex8-task",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "inst": "rm -rf node_modules && npm install"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "echoer": "^1.0.0",
+    "functionflowx": "^1.1.0"
+  }
+}

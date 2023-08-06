@@ -1,8 +1,7 @@
 {
   "title": "001input",
-  "description": "DEX8 Task Example which shows how to use multiple input files.",
+  "description": "The example which shows how to use multiple input files.",
+  "category": "examples",
   "thumbnail": "",
-  "category": "dex8example",
-  "howto": "",
-  "files": []
+  "response_output": false
 }

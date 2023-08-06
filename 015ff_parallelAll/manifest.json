@@ -1,8 +1,0 @@
-{
-  "title": "015ff_parallelAll",
-  "description": "FunctionFlow parallelAll() method executes all functions simultaneously. Returned result is array of all resolved promises.",
-  "thumbnail": "",
-  "category": "dex8example",
-  "howto": "",
-  "files": []
-}
