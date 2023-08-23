@@ -1,7 +1,7 @@
 module.exports = (x, lib) => {
-  const echoer = lib.echoer;
+  const echo = lib.echo;
 
-  echoer.log('f2:: ', x);
+  echo.log('f2:: ', x);
 
   return new Promise(resolve => setTimeout(() => { resolve(x * 3); }, 3000));
 };

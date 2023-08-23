@@ -7,6 +7,6 @@
   },
   "license": "MIT",
   "dependencies": {
-    "echoer": "^1.0.0"
+    "@mikosoft/echo": "^1.0.1"
   }
 }

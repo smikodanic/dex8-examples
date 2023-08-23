@@ -1,8 +1,8 @@
 async function fja1(x, lib) {
-  const echoer = lib.echoer;
+  const echo = lib.echo;
 
   x.a = x.a + 1;
-  echoer.log('f1:: ', x.a);
+  echo.log('f1:: ', x.a);
 
   return x;
 }

@@ -1,13 +1,13 @@
 module.exports = async (x, lib) => {
-  const echoer = lib.echoer;
+  const echo = lib.echo;
   const ff = global.functionFlow;
 
   x.a = x.a + 1;
-  echoer.log('f1:: ', x.a);
+  echo.log('f1:: ', x.a);
 
   await ff.delay(1300);
 
-  echoer.warn('Echo after some delay.');
+  echo.warn('Echo after some delay.');
 
   return x;
 };

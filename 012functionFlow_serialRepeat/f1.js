@@ -1,12 +1,12 @@
 module.exports = (x, lib) => {
-  const echoer = lib.echoer;
+  const echo = lib.echo;
   const ff = global.functionFlow;
 
   x.a = x.a + 1;
-  echoer.log('f1:: ', x.a);
+  echo.log('f1:: ', x.a);
 
   const iter = ff.lib.serialRepeatIteration;
-  echoer.log('serialrepeat iteration=', iter);
+  echo.log('serialrepeat iteration=', iter);
 
   return x;
 };

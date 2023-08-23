@@ -1,8 +1,8 @@
 module.exports = (x, lib) => {
-  const echoer = lib.echoer;
+  const echo = lib.echo;
 
   x.a = x.a + 1;
-  echoer.log('f2:: ', x.a);
+  echo.log('f2:: ', x.a);
 
   return x;
 };

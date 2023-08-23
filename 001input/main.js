@@ -1,17 +1,12 @@
-const Echoer = require('echoer');
-const { EventEmitter } = require('events');
+const Echo = require('@mikosoft/echo');
 
 
-module.exports = async (input) => {
+module.exports = async (input, library) => {
   if (!input) { throw new Error('Input is required.'); }
 
-  // create event emitter
-  const eventEmitter = new EventEmitter();
-  eventEmitter.setMaxListeners(5); // 10 by default
-
-  const echoer = new Echoer(true, 10, eventEmitter);
-
-  echoer.log('   a = ', input.a);
+  const eventEmitter = library.eventEmitter;
+  const echo = new Echo(true, 10, eventEmitter);
+  echo.log('   a = ', input.a);
 
   return input;
 };

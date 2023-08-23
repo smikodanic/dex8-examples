@@ -1,0 +1,18 @@
+<h1>005echo</h1>
+<p>
+  The example shows how to use Echoer methods log(), objekt(), error(), warn(), ....
+  Every method should print message in different color.
+  <br>Also it tests the behaviour of echo.log() applied directly in the for loop,
+  if it will work well in the web panel i.e. when echo messages are sent via websocket.
+</p>
+
+
+<h2>Echoer methods</h2>
+<ul>
+  <li><b>echo.log('one', 2, 'three')</b> - print string message(s)</li>
+  <li><b>echo.objekt({x: 13, y: 'power'})</b> - print object</li>
+  <li><b>echo.error(new Error('My error!'))</b> - print error</li>
+  <li><b>echo.warn('Some warning')</b> - print warning</li>
+  <li><b>echo.image(img_b64)</b> - send image in base64 format</li>
+  <li><b>echo.listen()</b> - listen for an input from the Web Panel</li>
+</ul>

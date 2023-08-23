@@ -8,8 +8,9 @@ module.exports = async (input, library) => {
 
   const echo = new Echo(true, 10, eventEmitter);
 
-  echo.log('myPassword:: ', input.myPassword);
-  echo.objekt(input.myObject);
+  // echo the image
+  const img_b64 = input.img_b64;
+  echo.image(img_b64);
 
-  return input;
+  return;
 };

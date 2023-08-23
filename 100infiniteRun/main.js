@@ -1,16 +1,13 @@
-const FunctionFlow = require('functionflowx');
-const Echo = require('echoer');
-const { EventEmitter } = require('events');
+const FunctionFlow = require('@mikosoft/functionflow');
+const Echo = require('@mikosoft/echo');
 
 const f1 = require('./f1.js');
 
 
-module.exports = async (input) => {
+module.exports = async (input, library) => {
   if (!input) { throw new Error('Input is required.'); }
 
-  // create event emitter
-  const eventEmitter = new EventEmitter();
-  eventEmitter.setMaxListeners(5); // 10 by default
+  const eventEmitter = library.eventEmitter;
 
   const ff = new FunctionFlow({ debug: false, msDelay: 800 }, eventEmitter);
   const echo = new Echo(true, 10, eventEmitter);

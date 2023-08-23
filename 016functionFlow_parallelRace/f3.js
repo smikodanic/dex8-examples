@@ -1,7 +1,7 @@
 module.exports = async (x, lib) => {
-  const echoer = lib.echoer;
+  const echo = lib.echo;
 
-  echoer.log('f3:: ', x);
+  echo.log('f3:: ', x);
 
   return x + 1;
 };
