@@ -3,5 +3,6 @@
   "description": "The example tests intentionally made error which breaks the task execution.",
   "category": "examples",
   "thumbnail": "",
-  "response_output": false
+  "output_response": false,
+  "environment": "nodejs"
 }

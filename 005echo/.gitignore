@@ -1,3 +1,5 @@
-node_modules
-npm-debug.log
-conf.js
+node_modules/
+dist/
+dex8auth.json
+inputSecret*
+.env

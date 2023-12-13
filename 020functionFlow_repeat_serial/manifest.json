@@ -3,5 +3,6 @@
   "description": "The example shows how to use FunctionFlowX repeat() method in combination with serial() method.",
   "category": "examples",
   "thumbnail": "",
-  "response_output": false
+  "output_response": false,
+  "environment": "nodejs"
 }

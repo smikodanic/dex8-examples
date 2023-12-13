@@ -1,7 +1,0 @@
-{
-  "title": "002input_password",
-  "description": "The example with password field in input object. The password is encoded when task is uploaded to dex8 Platform.",
-  "category": "examples",
-  "thumbnail": "",
-  "response_output": false
-}

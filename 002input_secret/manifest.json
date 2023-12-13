@@ -1,0 +1,8 @@
+{
+  "title": "002input_secret",
+  "description": "The example with inputSecret.json. The inputSecret.json is completely encoded when task is uploaded to DEX8 Platform.",
+  "category": "examples",
+  "thumbnail": "",
+  "output_response": false,
+  "environment": "nodejs"
+}

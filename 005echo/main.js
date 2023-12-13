@@ -1,11 +1,11 @@
 const Echo = require('@mikosoft/echo');
+const { HttpClientPptr } = require('@mikosoft/httpclient-pptr');
 
 
 module.exports = async (input, library) => {
   if (!input) { throw new Error('Input is required.'); }
 
   const eventEmitter = library.eventEmitter;
-
   const echo = new Echo(true, 10, eventEmitter);
 
   // echo pure string
@@ -25,9 +25,13 @@ module.exports = async (input, library) => {
   await new Promise(r => setTimeout(r, 1300));
 
   // echo in the for loop
-  for (let i = 1; i <= 100; i++) {
+  for (let i = 1; i <= 5; i++) {
     echo.log(` - from for loop - iteration #${i}`);
   }
+
+
+  // echo objekt
+  console.log(HttpClientPptr);
 
 
   return input;

@@ -3,5 +3,6 @@
   "description": "Example with object in the input file, echoed by await echo.objekt() method.",
   "thumbnail": "",
   "category": "examples",
-  "response_output": false
+  "output_response": false,
+  "environment": "nodejs"
 }

@@ -4,5 +4,6 @@
   "category": "example",
   "howto": "",
   "thumbnail": "",
-  "response_output": false
+  "output_response": false,
+  "environment": "nodejs"
 }

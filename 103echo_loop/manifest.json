@@ -3,5 +3,6 @@
   "description": "Test echo.log in the loop.",
   "category": "examples",
   "thumbnail": "",
-  "response_output": false
+  "output_response": false,
+  "environment": "nodejs"
 }
