@@ -5,7 +5,7 @@ const f1 = require('./f1.js');
 const f2_err = require('./f2_err.js'); // throws error
 const f3 = require('./f3.js');
 
-module.exports = async (input, library) => {
+module.exports = async (input, library = {}) => {
   if (!input) { throw new Error('Input is required.'); }
 
   const eventEmitter = library.eventEmitter;
