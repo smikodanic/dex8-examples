@@ -3,6 +3,5 @@
   "description": "The example which shows how to use multiple input files.",
   "category": "examples",
   "thumbnail": "",
-  "output_response": true,
   "environment": "nodejs"
 }

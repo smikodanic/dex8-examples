@@ -1,8 +1,7 @@
 {
   "title": "101intentional_error",
-  "description": "The example tests intentionally made error which breaks the task execution.",
+  "description": "The example tests intentionally made error which breaks the skript execution.",
   "category": "examples",
   "thumbnail": "",
-  "output_response": false,
   "environment": "nodejs"
 }

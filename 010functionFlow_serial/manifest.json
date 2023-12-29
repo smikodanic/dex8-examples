@@ -3,6 +3,5 @@
   "description": "The example shows how to use FunctionFlowX serial() method.",
   "category": "examples",
   "thumbnail": "",
-  "output_response": false,
   "environment": "nodejs"
 }

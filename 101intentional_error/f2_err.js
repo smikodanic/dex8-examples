@@ -4,7 +4,7 @@ const fja2 = function (x, lib) {
   x.a++;
   echo.log('f2:: ', x.a);
 
-  throw new Error('My intentional error which breaks the task !!!');
+  throw new Error('My intentional error which breaks the skript !!!');
 };
 
 module.exports = fja2;

@@ -1,6 +1,6 @@
-const TASK = '002input_secret';
+const SKRIPT = '002input_secret';
 
-const input = require(`./${TASK}/input.json`);
-const mainBundle = require(`./${TASK}/dist/mainBundle.js`);
+const input = require(`./${SKRIPT}/input.json`);
+const mainBundle = require(`./${SKRIPT}/dist/mainBundle.js`);
 
 mainBundle(input, {});

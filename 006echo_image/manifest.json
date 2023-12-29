@@ -3,6 +3,5 @@
   "description": "The example shows how to use Echoer to send image in base64 format.",
   "category": "examples",
   "thumbnail": "",
-  "output_response": false,
   "environment": "nodejs"
 }
