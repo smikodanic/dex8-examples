@@ -1,6 +1,6 @@
 {
   "title": "010functionFlow_serial",
-  "description": "The example shows how to use FunctionFlowX serial() method.",
+  "description": "The example shows how to use @mikosoft/functionflow serial() method.",
   "category": "examples",
   "thumbnail": "",
   "environment": "nodejs"

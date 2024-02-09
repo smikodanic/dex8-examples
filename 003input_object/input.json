@@ -1,0 +1,7 @@
+{
+  "myString": "One Two",
+  "myObject": {
+    "a": 1,
+    "x": "Some string"
+  }
+}

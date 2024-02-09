@@ -6,7 +6,7 @@ module.exports = (x, lib) => {
   echo.log('f1:: ', x.a);
 
   const iter = ff.lib.serialRepeatIteration;
-  echo.log('serialrepeat iteration=', iter);
+  echo.log('---serialRepeat iteration =', iter);
 
   return x;
 };

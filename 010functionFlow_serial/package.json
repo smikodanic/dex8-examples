@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "main": "main.js",
   "scripts": {
-    "inst": "rm -rf node_modules && npm install"
+    "inst": "rm -rf node_modules && npm install",
+    "inst-win": "rmdir /S /Q node_modules && del package-lock.json && npm install"
   },
   "license": "MIT",
   "dependencies": {
     "@mikosoft/echo": "^1.0.1",
-    "@mikosoft/functionflow": "1.0.0"
+    "@mikosoft/functionflow": "1.0.2"
   }
 }

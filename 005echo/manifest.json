@@ -1,6 +1,6 @@
 {
   "title": "005echo",
-  "description": "The example shows how to use Echoer methods.",
+  "description": "The example shows how to use Echo methods.",
   "category": "examples",
   "thumbnail": "",
   "environment": "nodejs"

@@ -5,7 +5,7 @@ module.exports = async (x, lib) => {
   x.a = x.a + 1;
   echo.log('f1:: ', x.a);
 
-  await ff.delay(1300);
+  await ff.delayRnd(1300, 2100);
 
   echo.warn('Echo after some delay.');
 

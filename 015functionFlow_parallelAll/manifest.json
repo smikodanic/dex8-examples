@@ -1,6 +1,6 @@
 {
   "title": "015functionFlow_parallelAll",
-  "description": "The example shows how to use FunctionFlowX parallelAll() method.",
+  "description": "The example shows how to use @mikosoft/functionflow parallelAll() method.",
   "category": "examples",
   "thumbnail": "",
   "environment": "nodejs"

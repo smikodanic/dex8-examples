@@ -2,16 +2,16 @@ const Echo = require('@mikosoft/echo');
 const { HttpClientPptr } = require('@mikosoft/httpclient-pptr');
 
 
-module.exports = async (input, library = {}) => {
+module.exports = async (input, inputSecret) => {
   if (!input) { throw new Error('Input is required.'); }
 
-  const eventEmitter = library.eventEmitter;
+  const eventEmitter = global.dex8.eventEmitter;
   const echo = new Echo(true, 10, eventEmitter);
 
   // echo pure string
   echo.log('rnd = ', Math.random().toFixed(6), ' --- ok');
-  echo.log('A', 'B');
-  echo.log('C');
+  echo.log('a =', input.a, 'a =', input.b);
+  echo.log('c = ');
 
   // echo JS object
   echo.objekt({ a: 1, b: 'some string', is_active: false });
@@ -29,8 +29,6 @@ module.exports = async (input, library = {}) => {
     echo.log(` - from for loop - iteration #${i}`);
   }
 
-
-  // echo objekt
   console.log(HttpClientPptr);
 
 

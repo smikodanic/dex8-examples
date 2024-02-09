@@ -1,6 +1,6 @@
 {
   "title": "016functionFlow_parallelRace",
-  "description": "The example shows how to use FunctionFlowX parallelRace() method.",
+  "description": "The example shows how to use @mikosoft/functionflow parallelRace() method.",
   "category": "examples",
   "thumbnail": "",
   "environment": "nodejs"

@@ -1,6 +1,6 @@
 {
   "title": "002input_secret",
-  "description": "The example with inputSecret.json. The inputSecret.json is completely encoded when skript is uploaded to DEX8 Platform.",
+  "description": "The example with inputSecret.json.",
   "category": "examples",
   "thumbnail": "",
   "environment": "nodejs"

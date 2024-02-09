@@ -1,6 +1,6 @@
 {
   "title": "012functionFlow_serialRepeat",
-  "description": "The example shows how to use FunctionFlowX serialRepeat() method.",
+  "description": "The example shows how to use @mikosoft/functionflow serialRepeat() method.",
   "category": "examples",
   "thumbnail": "",
   "environment": "nodejs"

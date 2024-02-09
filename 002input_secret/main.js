@@ -1,22 +1,20 @@
 const Echo = require('@mikosoft/echo');
 
 
-module.exports = async (input, library = {}) => {
+module.exports = async (input, inputSecret) => {
   if (!input) { throw new Error('Input is required.'); }
 
-  const eventEmitter = library.eventEmitter;
-
+  const eventEmitter = global.dex8.eventEmitter;
   const echo = new Echo(true, 10, eventEmitter);
 
+  echo.log('--- input.json ---');
   echo.log('   a = ', input.a);
-  echo.log('LEVEL 1 --- password: ', input.password);
-  echo.log('LEVEL 1 ---  password_1: ', input.password_1);
-  echo.log('LEVEL 1 ---  MyPAssword_1: ', input.MyPAssword_1, input.PasswordNotExists);
-  echo.log('PasswordNotExists: ', input.PasswordNotExists);
   echo.log();
-  echo.log('LEVEL 2 --- company.comp_password:', input.company.comp_password);
-  echo.log();
-  echo.log('LEVEL 3 --- company.employer1.emp1_password:', input.company.employer1.emp1_password);
+  echo.log('--- inputSecret.json ---');
+  echo.log('password: ', inputSecret.password);
+  echo.log('company.comp_password:', inputSecret.company.comp_password);
+  echo.log('company.employer1.emp1_password:', inputSecret.company.employer1.emp1_password);
+  echo.log('passwordNotExists: ', inputSecret.passwordNotExists);
 
   return input;
 };

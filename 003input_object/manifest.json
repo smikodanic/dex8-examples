@@ -1,6 +1,6 @@
 {
   "title": "003input_object",
-  "description": "Example with object in the input file, echoed by await echo.objekt() method.",
+  "description": "Example with object in the input file, echoed by echo.objekt() method.",
   "thumbnail": "",
   "category": "examples",
   "environment": "nodejs"
