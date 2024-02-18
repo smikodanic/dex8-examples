@@ -1,7 +1,7 @@
 {
   "title": "100infiniteRun",
   "description": "Repeat one function (f1) 50000 times.",
-  "category": "example",
+  "category": "examples",
   "howto": "",
   "thumbnail": "",
   "environment": "nodejs"

@@ -3,7 +3,7 @@ const Echo = require('@mikosoft/echo');
 
 module.exports = async (input, inputSecret) => {
   const eventEmitter = global.dex8.eventEmitter;
-  const echo = new Echo(true, 10, eventEmitter);
+  const echo = new Echo(true, 300, eventEmitter); // use >200
 
   // create array
   const n = 10;
@@ -22,7 +22,7 @@ module.exports = async (input, inputSecret) => {
   // echo in for loop
   for (let i = 1; i <= 10; i++) {
     console.log(i);
-    echo.log('for::', i);
+    await echo.log('for::', i); // use await
   }
 
 
